@@ -34,18 +34,18 @@ namespace IST331_FinalWaWaApp {
         }
 
         private void Chickensandwiches_Click(object sender, RoutedEventArgs e) {
-            orderBox.Items.Add("Chicken Sandwich - $2.26");
-            parent.orderBox.Items.Add("Chicken Sandwich - $2.26");
+            orderBox.Items.Add("Chicken Sandwich - $4.26");
+            parent.orderBox.Items.Add("Chicken Sandwich - $4.26");
         }
 
         private void Meatballsub_Click(object sender, RoutedEventArgs e) {
-            orderBox.Items.Add("Meatball Sandwich - $2.26");
-            parent.orderBox.Items.Add("Meatball Sandwich - $2.26");
+            orderBox.Items.Add("Meatball Sandwich - $4.26");
+            parent.orderBox.Items.Add("Meatball Sandwich - $4.26");
         }
 
         private void Flatbreads_Click(object sender, RoutedEventArgs e) {
-            orderBox.Items.Add("Flatbread - $2.26");
-            parent.orderBox.Items.Add("Flatbread - $2.26");
+            orderBox.Items.Add("Flatbread - $3.26");
+            parent.orderBox.Items.Add("Flatbread - $3.26");
         }
     }
 }

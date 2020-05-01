@@ -55,7 +55,8 @@ namespace IST331_FinalWaWaApp {
             string[] orderItems = orderBox.Items.OfType<string>().ToArray();
             List<double> itemPrices = new List<double>();
             foreach (string item in orderItems) {
-               double itemPrice = Double.Parse(item.Substring(item.IndexOf("2")));
+                double itemPrice = Double.Parse(item.Substring(item.IndexOf("$") + 1));
+                //double itemPrice = Double.Parse(item.Substring(start, end));
                itemPrices.Add(itemPrice);
                total = total + itemPrice;
             }
