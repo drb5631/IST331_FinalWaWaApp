@@ -1,0 +1,74 @@
+﻿<Window x:Name="mainWindow" x:Class="IST331_FinalWaWaApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="Home" Height="450" Width="800" ResizeMode="NoResize">
+
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="White" Offset="0"/>
+                <GradientStop Color="#FFE7D6BA" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="249*"/>
+            <ColumnDefinition Width="148*"/>
+        </Grid.ColumnDefinitions>
+        <Rectangle Fill="#FFE7D6BA" HorizontalAlignment="Left" Height="47" Margin="0,0,-0.4,0" VerticalAlignment="Top" Width="794" Grid.ColumnSpan="2"/>
+        <TextBlock Margin="15,10,4.6,0" TextWrapping="Wrap" Text="Welcome to Wawa" VerticalAlignment="Top" Height="31" Width="774" FontFamily="Officina Sans" FontSize="28" Foreground="Red" FontWeight="Bold" Grid.ColumnSpan="2"/>
+        <Button x:Name="btnBreakfast" Margin="45,68,224.6,202" Background="Transparent" Click="BtnBreakfast_Click">
+            <StackPanel>
+                <Image x:Name="homeBreakfast" Source="images/breakfast.png" Height="88" Width="215" VerticalAlignment="Bottom" HorizontalAlignment="Left" />
+                <TextBlock HorizontalAlignment="Center" Foreground="#FF73411C" FontFamily="Comic Sans MS"><Run Text="Breakfast"/></TextBlock>
+            </StackPanel>
+        </Button>
+        <Button x:Name="lunchDinerButton" Margin="298,69,267.6,201" Click="LunchDinerButton_Click" Grid.ColumnSpan="2">
+            <StackPanel>
+                <Image Source="images/lunchdinner.png" Height="96" Width="215" />
+                <TextBlock HorizontalAlignment="Center" Foreground="#FF73411C" FontFamily="Comic Sans MS"><Run Text="Lunch/Dinner"/></TextBlock>
+            </StackPanel>
+        </Button>
+        <Button Margin="162,231,107.6,39" Click="BeverageButton">
+            <StackPanel>
+                <Image Source="images/beverages.png" Height="107" Width="215" />
+                <TextBlock HorizontalAlignment="Center"><Run Text="Beverages" Foreground="#FF73411C" FontFamily="Comic Sans MS"/></TextBlock>
+            </StackPanel>
+        </Button>
+        <ListBox x:Name="orderBox" HorizontalAlignment="Left" Height="265" Margin="73.4,52,0,0" VerticalAlignment="Top" Width="197" Grid.Column="1" SelectionChanged="OrderBox_SelectionChanged"/>
+        <Button x:Name="CompleteOrder" Content="Complete Order" Grid.Column="1" FontFamily="Comic Sans MS" Foreground="#FFD93030" HorizontalAlignment="Left" Margin="87.4,359,0,0" VerticalAlignment="Top" Width="161" RenderTransformOrigin="0.28,0.458" Background="Red" Click="CompleteOrder_Click" FontWeight="Bold"/>
+        <TextBlock Grid.Column="1" HorizontalAlignment="Left" Margin="129,396,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="15" Width="162" FontSize="9"><Run Text="Sierra Chiu, Ricky Patel, "/><Run Text="Dave Blon"/></TextBlock>
+        <Button x:Name="cancelOrderButton" Content="Cancel Order" FontFamily="Comic Sans MS" Foreground="#FFD93030" HorizontalAlignment="Left" Margin="15,374,0,0" VerticalAlignment="Top" Width="161" RenderTransformOrigin="0.28,0.458" Background="Red" Click="CancelOrder_Click" FontWeight="Bold"/>
+        <Label x:Name="totalLabel" Content="Total: $" Grid.Column="1" HorizontalAlignment="Left" Margin="87.4,324,0,0" VerticalAlignment="Top" FontFamily="Comic Sans MS" Background="{x:Null}" Foreground="Red" FontWeight="Bold" FontSize="18"/>
+
+
+    </Grid>
+
+
+    <Window.Resources>
+        <Style TargetType="{x:Type Button}">
+
+            <Setter Property="FontSize" Value="20" />
+
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <Border CornerRadius="4" Background="Transparent">
+                            <Grid>
+                                <ContentPresenter x:Name="MyContentPresenter"  HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,0" />
+                            </Grid>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+    </Window.Resources>
+
+
+
+</Window>
+    
+    

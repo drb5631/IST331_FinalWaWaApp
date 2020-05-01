@@ -10,16 +10,20 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace IST331_FinalWaWaApp {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for BeginWindow.xaml
     /// </summary>
-    public partial class MainWindow : Window {
-        public MainWindow() {
+    public partial class BeginWindow : Window {
+        public BeginWindow() {
             InitializeComponent();
+        }
+
+        private void CompleteOrder_Click(object sender, RoutedEventArgs e) {
+            MainWindow mainWindow = new MainWindow();
+            mainWindow.Show();
         }
     }
 }

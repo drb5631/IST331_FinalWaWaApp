@@ -55,7 +55,23 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Page Include="MainWindow.xaml">
+    <Page Include="BeginWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="BeveragesWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="BreakfastWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="LunchDinnerWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="HomeWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -63,8 +79,20 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="MainWindow.xaml.cs">
-      <DependentUpon>MainWindow.xaml</DependentUpon>
+    <Compile Include="BeginWindow.xaml.cs">
+      <DependentUpon>BeginWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="BeveragesWindow.xaml.cs">
+      <DependentUpon>BeveragesWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="BreakfastWindow.xaml.cs">
+      <DependentUpon>BreakfastWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="LunchDinnerWindow.xaml.cs">
+      <DependentUpon>LunchDinnerWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HomeWindow.xaml.cs">
+      <DependentUpon>HomeWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
@@ -93,6 +121,34 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\back.png" />
+    <Resource Include="images\bagel.png" />
+    <Resource Include="images\Beverages.png" />
+    <Resource Include="images\bowl.png" />
+    <Resource Include="images\breakfast.png" />
+    <Resource Include="images\burrito.png" />
+    <Resource Include="images\burrito2.jpg" />
+    <Resource Include="images\chicken.png" />
+    <Resource Include="images\chickensandwiches.png" />
+    <Resource Include="images\coldbrew.png" />
+    <Resource Include="images\coldsandwiches.png" />
+    <Resource Include="images\eggcheese.jpg" />
+    <Resource Include="images\flatbread.png" />
+    <Resource Include="images\fruit.jpg" />
+    <Resource Include="images\fruitsmoothie.png" />
+    <Resource Include="images\hotsandwiches.png" />
+    <Resource Include="images\icedchaitea.png" />
+    <Resource Include="images\icedlattes.png" />
+    <Resource Include="images\lunchdinner.png" />
+    <Resource Include="images\meatballsub.jpg" />
+    <Resource Include="images\meatballsub.png" />
+    <Resource Include="images\oatmeal.png" />
+    <Resource Include="images\sides.png" />
+    <Resource Include="images\soups.jpg" />
+    <Resource Include="images\soups.png" />
+    <Resource Include="images\wawalogo.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
