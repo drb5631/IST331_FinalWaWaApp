@@ -34,25 +34,25 @@ namespace IST331_FinalWaWaApp {
 
         private void ColdbrewButton(object sender, RoutedEventArgs e) {
 
-            orderBox.Items.Add("Cold Brew/Iced Coffee    $2.26");
-            parent.orderBox.Items.Add("Cold Brew/Iced Coffee    $2.26");
+            orderBox.Items.Add("Cold Brew/Iced Coffee - $2.26");
+            parent.orderBox.Items.Add("Cold Brew/Iced Coffee - $2.26");
         }
 
         private void Fruitsmoothie_Click(object sender, RoutedEventArgs e) {
 
-            orderBox.Items.Add("Fruit Smoothies          $4.53");
-            parent.orderBox.Items.Add("Fruit Smoothies          $4.53");
+            orderBox.Items.Add("Fruit Smoothies - $2.53");
+            parent.orderBox.Items.Add("Fruit Smoothies - $2.53");
 
         }
         private void Chaitea_Click(object sender, RoutedEventArgs e) {
 
-            orderBox.Items.Add("Chai Tea                  $3.79");
-            parent.orderBox.Items.Add("Chai Tea                  $3.79");
+            orderBox.Items.Add("Chai Tea - $2.79");
+            parent.orderBox.Items.Add("Chai Tea - $2.79");
         }
 
         private void Lattes_Click(object sender, RoutedEventArgs e) {
-            orderBox.Items.Add("Lattes                   $3.69");
-            parent.orderBox.Items.Add("Lattes                   $3.69");
+            orderBox.Items.Add("Lattes - $2.69");
+            parent.orderBox.Items.Add("Lattes - $2.69");
         }
     }
 }

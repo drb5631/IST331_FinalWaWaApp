@@ -51,17 +51,17 @@ namespace IST331_FinalWaWaApp {
 
         private void CompleteOrder_Click(object sender, RoutedEventArgs e) {
             Random random = new Random();
-            //double total = 0.0;
-            //string[] orderItems = orderBox.Items.OfType<string>().ToArray();
-            ////List<double> itemPrices = new List<double>();
-            //foreach (string item in orderItems) {
-            //    double itemPrice = Double.Parse(item.Substring(item.IndexOf("           ")));
-            //    //itemPrices.Add(itemPrice);
-            //    total = total + itemPrice;
-            //}
+            double total = 0.0;
+            string[] orderItems = orderBox.Items.OfType<string>().ToArray();
+            List<double> itemPrices = new List<double>();
+            foreach (string item in orderItems) {
+               double itemPrice = Double.Parse(item.Substring(item.IndexOf("2")));
+               itemPrices.Add(itemPrice);
+               total = total + itemPrice;
+            }
 
             int orderNumber = random.Next(1, 101);
-            MessageBox.Show("Your order is being made. Please pay at the register before picking up. \nThank you for choosing Wawa!\nOrder Number: " + orderNumber);
+            MessageBox.Show("Your order is being made. Please pay at the register before picking up. \nThank you for choosing Wawa!\nOrder Number: " + orderNumber + "\nOrder Total: $" + total);
         }
 
         private void CancelOrder_Click(object sender, RoutedEventArgs e) {
