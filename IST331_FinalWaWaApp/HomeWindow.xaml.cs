@@ -63,6 +63,9 @@ namespace IST331_FinalWaWaApp {
 
             int orderNumber = random.Next(1, 101);
             MessageBox.Show("Your order is being made. Please pay at the register before picking up. \nThank you for choosing Wawa!\nOrder Number: " + orderNumber + "\nOrder Total: $" + total);
+            BeginWindow beginWindow = new BeginWindow();
+            this.Hide();
+            beginWindow.Show();
         }
 
         private void CancelOrder_Click(object sender, RoutedEventArgs e) {
