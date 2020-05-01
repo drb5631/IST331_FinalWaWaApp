@@ -1,64 +1,56 @@
-﻿<Window x:Name="breakfastWindow" x:Class="IST331_FinalWaWaApp.BreakfastWindow"
+﻿<Window x:Class="IST331_FinalWaWaApp.BreakfastWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:IST331_FinalWaWaApp"
         mc:Ignorable="d"
-        Title="BreakfastWindow" Height="450" Width="800">
+        Title="SecondBreafastWindow" Height="450" Width="800">
     <Grid>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="114.4"/>
-            <RowDefinition/>
-        </Grid.RowDefinitions>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="21*"/>
-            <ColumnDefinition Width="142*"/>
-            <ColumnDefinition Width="630*"/>
-        </Grid.ColumnDefinitions>
-        <Rectangle Fill="#FFE7D6BA" HorizontalAlignment="Left" Height="47" Margin="0,258.6,-0.4,0" VerticalAlignment="Top" Width="794" Grid.ColumnSpan="3" Grid.Row="1"/>
-        <Rectangle Fill="#FFE7D6BA" HorizontalAlignment="Left" Height="47" Margin="0,0,-0.4,0" VerticalAlignment="Top" Width="794" Grid.ColumnSpan="3"/>
-        <TextBlock Margin="15,10,4.6,0" TextWrapping="Wrap" Text="Welcome to Wawa" VerticalAlignment="Top" Height="31" Width="774" FontFamily="Officina Sans" FontSize="28" Foreground="Red" FontWeight="Bold" Grid.ColumnSpan="3"/>
-        <Button x:Name="sandwichesClick" Margin="26,52,500.6,208" Click="SandwichesClick_Click" Background="Transparent" Grid.ColumnSpan="2" Grid.RowSpan="2" Grid.Column="1">
-            <StackPanel>
-                <Image Source="images/burrito.png" Height="94" Width="183" VerticalAlignment="Bottom" HorizontalAlignment="Left" />
-                <TextBlock HorizontalAlignment="Center" FontFamily="Comic Sans MS" FontSize="20" FontWeight="Bold" Foreground="#FF73411C"><Run Text="Breakfast Sandwiches"/></TextBlock>
-            </StackPanel>
-        </Button>
-        <Button Margin="158,52,246,208" Click="Button_Click" Background="Transparent" Grid.Column="2" Grid.RowSpan="2">
-            <StackPanel>
-                <Image Source="images/oatmeal.png" Height="112" Width="186" />
-                <TextBlock HorizontalAlignment="Center" FontFamily="Comic Sans MS" FontSize="20" FontWeight="Bold" Foreground="#FF73411C"><Run Text="Oatmeal"/></TextBlock>
-            </StackPanel>
-        </Button>
-        <Button Margin="26,102.6,500.6,52" Click="Button_Click" Background="Transparent" Grid.ColumnSpan="2" Grid.Row="1" Grid.Column="1">
-            <StackPanel>
-                <Image Source="images/fruit.jpg" Height="92" Width="195" />
-                <TextBlock HorizontalAlignment="Center" FontFamily="Comic Sans MS" FontSize="20" FontWeight="Bold" Foreground="#FF73411C" Height="25"><Run Text="Fruit Bowl"/></TextBlock>
-            </StackPanel>
-        </Button>
-        <ListBox x:Name="orderBox" HorizontalAlignment="Left" Height="269" Margin="423.8,52,0,0" VerticalAlignment="Top" Width="197" Grid.Column="2" Grid.RowSpan="2" SelectionChanged="OrderBox_SelectionChanged"/>
-        <Button x:Name="backButton" HorizontalAlignment="Left" Margin="0,258.6,0,10" Width="120" FontFamily="Segoe UI Black" FontSize="20" Background="#FFD93030" Click="BackButton_Click" Grid.Row="1" Grid.ColumnSpan="2">
-            <StackPanel>
-                <TextBlock HorizontalAlignment="Center" FontFamily="Comic Sans MS" FontSize="20" FontWeight="Bold" Foreground="#FF73411C"><Run Text="BACK"/></TextBlock>
-            </StackPanel>
-        </Button>
-        <Button Margin="158,105,246,52" Background="Transparent" Grid.Column="2" Grid.Row="1" Click="Button_Click_1">
-            <StackPanel>
-                <Image Source="images/bowl.png" Height="91" Width="186" VerticalAlignment="Bottom" HorizontalAlignment="Left" />
-                <TextBlock HorizontalAlignment="Center" FontFamily="Comic Sans MS" FontSize="20" FontWeight="Bold" Foreground="#FF73411C"><Run Text="Breakfast Bowl"/></TextBlock>
-            </StackPanel>
-        </Button>
-        <Button x:Name="clearOrderBtn" HorizontalAlignment="Left" Margin="443.8,211.6,0,0" VerticalAlignment="Top" Width="138" Height="28" FontFamily="Segoe UI Black" FontSize="20" Background="#FFD93030" Click="ClearOrderBtn_Click" Grid.Column="2" Grid.Row="1">
-            <StackPanel>
-                <TextBlock HorizontalAlignment="Center" FontFamily="Comic Sans MS" FontSize="16" FontWeight="Bold" Foreground="#FFD93030" Width="98" TextAlignment="Center" Text="Clear Order"/>
-            </StackPanel>
-        </Button>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="114.4"/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="21*"/>
+                <ColumnDefinition Width="142*"/>
+                <ColumnDefinition Width="630*"/>
+            </Grid.ColumnDefinitions>
+            <Rectangle Fill="#FFE7D6BA" HorizontalAlignment="Left" Height="47" Margin="0,258.6,-0.4,0" VerticalAlignment="Top" Width="794" Grid.ColumnSpan="3" Grid.Row="1"/>
+            <Rectangle Fill="#FFE7D6BA" HorizontalAlignment="Left" Height="47" Margin="0,0,-0.4,0" VerticalAlignment="Top" Width="794" Grid.ColumnSpan="3"/>
+            <TextBlock Margin="15,10,4.6,0" TextWrapping="Wrap" Text="Welcome to Wawa" VerticalAlignment="Top" Height="31" Width="774" FontFamily="Officina Sans" FontSize="28" Foreground="Red" FontWeight="Bold" Grid.ColumnSpan="3"/>
+            <Button x:Name="eggSandwich" Margin="26,52,500.6,208" Click="EggSandwich_Click" Background="Transparent" Grid.ColumnSpan="2" Grid.RowSpan="2" Grid.Column="1">
+                <StackPanel>
+                    <Image Source="images/eggcheese.jpg" Height="120" Width="215" VerticalAlignment="Bottom" HorizontalAlignment="Left" Stretch="Fill" />
+                    <TextBlock HorizontalAlignment="Center" FontFamily="Comic Sans MS" FontSize="20" FontWeight="Bold" Foreground="#FF73411C"><Run Text="Ham and Eggs Sandwich"/></TextBlock>
+                </StackPanel>
+            </Button>
+            <Button x:Name="bagel" Margin="135.8,89,272.6,147" Click="Bagel_Click" Background="Transparent" Grid.Column="2" Grid.RowSpan="2">
+                <StackPanel>
+                    <Image Source="images/bagel.png" Height="148" Width="142" Stretch="Fill" />
+                    <TextBlock HorizontalAlignment="Center" FontFamily="Comic Sans MS" FontSize="20" FontWeight="Bold" Foreground="#FF73411C" Width="208"><Run Text="Sausage/Egg/Cheese Bagel"/></TextBlock>
+                </StackPanel>
+            </Button>
+            <Button x:Name="burrito2" Margin="26,102.6,500.6,52" Click="Burrito2_Click" Background="Transparent" Grid.ColumnSpan="2" Grid.Row="1" Grid.Column="1">
+                <StackPanel>
+                    <Image Source="images/burrito2.jpg" Height="102" Width="138" Stretch="Fill" />
+                    <TextBlock HorizontalAlignment="Center" FontFamily="Comic Sans MS" FontSize="20" FontWeight="Bold" Foreground="#FF73411C"><Run Text="Breakfast Burrito"/></TextBlock>
+                </StackPanel>
+            </Button>
+            <ListBox x:Name="orderBox" HorizontalAlignment="Left" Height="237" Margin="423.8,52,0,0" VerticalAlignment="Top" Width="197" Grid.Column="2" Grid.RowSpan="2" SelectionChanged="ListBox_SelectionChanged"/>
+            <Button x:Name="secondBreakfastBackBtn" HorizontalAlignment="Left"  Margin="0,258.6,0,10" VerticalAlignment="Top" Width="120" Height="39" FontFamily="Segoe UI Black" FontSize="20" Background="#FFD93030" Click="SecondBreakfastBackBtn_Click" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="2">
+                <StackPanel>
+                    <TextBlock HorizontalAlignment="Center" FontFamily="Comic Sans MS" FontSize="20" FontWeight="Bold" Foreground="#FF73411C"><Run Text="BACK"/></TextBlock>
+                </StackPanel>
+            </Button>
+        </Grid>
+
     </Grid>
+
     <Window.Resources>
         <Style TargetType="{x:Type Button}">
 
-            <Setter Property="Foreground" Value="#FF73411C" />
             <Setter Property="FontSize" Value="20" />
 
             <Setter Property="Template">
