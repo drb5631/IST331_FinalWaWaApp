@@ -18,13 +18,13 @@
         <Button Margin="51,66,221.6,217" Click="ColdbrewButton">
             <StackPanel>
                 <Image Source="images/coldbrew.png" Height="107" Width="104" VerticalAlignment="Bottom" HorizontalAlignment="Center" Margin="52,0,48,0" />
-                <TextBlock HorizontalAlignment="Center" FontFamily="Comic Sans MS" FontSize="18"><Run Text="Cold Brew/Iced Coffee"/></TextBlock>
+                <TextBlock HorizontalAlignment="Center" FontFamily="Comic Sans MS" FontSize="18" FontWeight="Bold"><Run Text="Cold Brew/Iced Coffee"/></TextBlock>
             </StackPanel>
         </Button>
         <Button Margin="50,208,221.6,59" Click="Chaitea_Click">
             <StackPanel>
                 <Image Source="images/icedchaitea.png" Height="119" Width="113" />
-                <TextBlock HorizontalAlignment="Center" FontFamily="Comic Sans MS"><Run Text="Chai Tea"/></TextBlock>
+                <TextBlock HorizontalAlignment="Center" FontFamily="Comic Sans MS" FontWeight="Bold"><Run Text="Chai Tea"/></TextBlock>
             </StackPanel>
         </Button>
         <Button x:Name="backButton" HorizontalAlignment="Left" Margin="0,373,0,0" Width="120" Height="37" FontFamily="Segoe UI Black" FontSize="20" Background="#FF73411C" Click="BackButton_Click" VerticalAlignment="Top">
@@ -35,19 +35,19 @@
         <Button Margin="304,52,284.6,217" Click="Fruitsmoothie_Click" Grid.ColumnSpan="2">
             <StackPanel>
                 <Image Source="images/fruitsmoothie.png" Height="109" Width="139" />
-                <TextBlock HorizontalAlignment="Center" Height="28" Width="145"><Run Text="Fruit Smoothie" FontFamily="Comic Sans MS"/></TextBlock>
+                <TextBlock HorizontalAlignment="Center" Height="28" Width="145" FontWeight="Bold"><Run Text="Fruit Smoothie" FontFamily="Comic Sans MS"/></TextBlock>
             </StackPanel>
         </Button>
-        <ListBox  x:Name="orderBox" TextBlock.FontSize="14" HorizontalAlignment="Left" Height="276" Margin="70.4,52,0,0" VerticalAlignment="Top" Width="203" Grid.Column="1">
+        <ListBox  x:Name="orderBox" FontSize="12" HorizontalAlignment="Left" Height="276" Margin="70.4,52,0,0" VerticalAlignment="Top" Width="203" Grid.Column="1" HorizontalContentAlignment="Right">
         </ListBox>
 
-        <Button Margin="281,203,284.6,53" Click="Lattes_Click" Grid.ColumnSpan="2">
+        <Button Margin="281,208,284.6,53" Click="Lattes_Click" Grid.ColumnSpan="2">
             <StackPanel>
                 <Image Source="images/icedlattes.png" Height="124" Width="110" />
-                <TextBlock HorizontalAlignment="Center"><Run FontFamily="Comic Sans MS" Text="Latte"/></TextBlock>
+                <TextBlock HorizontalAlignment="Center" FontWeight="Bold"><Run FontFamily="Comic Sans MS" Text="Latte"/></TextBlock>
             </StackPanel>
         </Button>
-        <Button x:Name="clearOrderBtn" HorizontalAlignment="Left" Margin="110.4,333,0,0" VerticalAlignment="Top" Width="114" Height="28" FontFamily="Segoe UI Black" FontSize="20" Click="ClearOrderBtn_Click" Grid.Column="1">
+        <Button x:Name="clearOrderBtn" HorizontalAlignment="Left" Margin="115.4,331,0,0" VerticalAlignment="Top" Width="114" Height="28" FontFamily="Segoe UI Black" FontSize="20" Click="ClearOrderBtn_Click" Grid.Column="1">
             <StackPanel>
                 <TextBlock HorizontalAlignment="Center" FontFamily="Comic Sans MS" FontSize="18" FontWeight="Bold" Foreground="#FFD93030" Width="107"><Run Text="Clear Order"/></TextBlock>
             </StackPanel>

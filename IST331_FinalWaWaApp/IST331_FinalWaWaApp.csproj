@@ -123,19 +123,15 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="images\back.png" />
     <Resource Include="images\bagel.png" />
     <Resource Include="images\Beverages.png" />
     <Resource Include="images\bowl.png" />
     <Resource Include="images\breakfast.png" />
     <Resource Include="images\burrito.png" />
-    <Resource Include="images\burrito2.jpg" />
     <Resource Include="images\chicken.png" />
     <Resource Include="images\chickensandwiches.png" />
     <Resource Include="images\coldbrew.png" />
     <Resource Include="images\coldsandwiches.png" />
-    <Resource Include="images\eggcheese.jpg" />
-    <Resource Include="images\flatbread.png" />
     <Resource Include="images\fruit.jpg" />
     <Resource Include="images\fruitsmoothie.png" />
     <Resource Include="images\hotsandwiches.png" />
@@ -151,7 +147,13 @@
     <Resource Include="images\wawalogo.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="images\deletePicture.jpg" />
+    <Resource Include="images\flatbreads.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\breakfastburrito.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\delete.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

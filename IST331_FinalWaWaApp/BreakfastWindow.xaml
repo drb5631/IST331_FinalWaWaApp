@@ -24,29 +24,29 @@
             <TextBlock Margin="15,10,4.6,0" TextWrapping="Wrap" Text="Welcome to Wawa" VerticalAlignment="Top" Height="31" Width="774" FontFamily="Officina Sans" FontSize="28" Foreground="Red" FontWeight="Bold" Grid.ColumnSpan="3"/>
             <Button x:Name="eggSandwich" Margin="26,52,500.6,208" Click="EggSandwich_Click" Background="Transparent" Grid.ColumnSpan="2" Grid.RowSpan="2" Grid.Column="1">
                 <StackPanel>
-                    <Image Source="images/eggcheese.jpg" Height="120" Width="215" VerticalAlignment="Bottom" HorizontalAlignment="Left" Stretch="Fill" />
-                    <TextBlock HorizontalAlignment="Center" FontFamily="Comic Sans MS" FontSize="20" FontWeight="Bold" Foreground="#FF73411C"><Run Text="Ham and Eggs Sandwich"/></TextBlock>
+                    <Image Source="images/oatmeal.png" Height="108" Width="215" VerticalAlignment="Bottom" HorizontalAlignment="Left" Stretch="Fill" />
+                    <TextBlock HorizontalAlignment="Center" FontFamily="Comic Sans MS" FontSize="20" FontWeight="Bold" Foreground="#FF73411C"><Run Text="Oatmeal"/></TextBlock>
                 </StackPanel>
             </Button>
             <Button x:Name="bagel" Margin="135.8,89,272.6,147" Click="Bagel_Click" Background="Transparent" Grid.Column="2" Grid.RowSpan="2">
                 <StackPanel>
                     <Image Source="images/bagel.png" Height="148" Width="142" Stretch="Fill" />
-                    <TextBlock HorizontalAlignment="Center" FontFamily="Comic Sans MS" FontSize="20" FontWeight="Bold" Foreground="#FF73411C" Width="208"><Run Text="Sausage/Egg/Cheese Bagel"/></TextBlock>
+                    <TextBlock HorizontalAlignment="Center" FontFamily="Comic Sans MS" FontSize="20" FontWeight="Bold" Foreground="#FF73411C" Width="208" TextAlignment="Center"><Run Text="Breakfast Sandwich"/></TextBlock>
                 </StackPanel>
             </Button>
             <Button x:Name="burrito2" Margin="26,102.6,500.6,52" Click="Burrito2_Click" Background="Transparent" Grid.ColumnSpan="2" Grid.Row="1" Grid.Column="1">
                 <StackPanel>
-                    <Image Source="images/burrito2.jpg" Height="102" Width="138" Stretch="Fill" />
+                    <Image Source="images/breakfastburrito.png" Height="113" Width="234" Stretch="Fill" />
                     <TextBlock HorizontalAlignment="Center" FontFamily="Comic Sans MS" FontSize="20" FontWeight="Bold" Foreground="#FF73411C"><Run Text="Breakfast Burrito"/></TextBlock>
                 </StackPanel>
             </Button>
-            <ListBox x:Name="orderBox" HorizontalAlignment="Left" Height="237" Margin="423.8,52,0,0" VerticalAlignment="Top" Width="197" Grid.Column="2" Grid.RowSpan="2" SelectionChanged="ListBox_SelectionChanged"/>
+            <ListBox x:Name="orderBox" HorizontalAlignment="Left" Height="276" Margin="404.8,52,0,0" VerticalAlignment="Top" Width="203" Grid.Column="2" Grid.RowSpan="2" HorizontalContentAlignment="Right" SelectionChanged="ListBox_SelectionChanged"/>
             <Button x:Name="secondBreakfastBackBtn" HorizontalAlignment="Left"  Margin="0,258.6,0,10" VerticalAlignment="Top" Width="120" Height="39" FontFamily="Segoe UI Black" FontSize="20" Background="#FFD93030" Click="SecondBreakfastBackBtn_Click" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="2">
                 <StackPanel>
                     <TextBlock HorizontalAlignment="Center" FontFamily="Comic Sans MS" FontSize="20" FontWeight="Bold" Foreground="#FF73411C"><Run Text="BACK"/></TextBlock>
                 </StackPanel>
             </Button>
-            <Button x:Name="clearOrderButton" Content="Clear Order" Grid.Column="2" HorizontalAlignment="Left" Margin="456.8,194.6,0,0" Grid.Row="1" VerticalAlignment="Top" Width="111" FontFamily="Comic Sans MS" FontSize="18" FontWeight="Bold" Foreground="Red" Click="ClearOrder_Click"/>
+            <Button x:Name="clearOrderButton" Content="Clear Order" Grid.Column="2" HorizontalAlignment="Left" Margin="449.8,218.6,0,0" Grid.Row="1" VerticalAlignment="Top" Width="111" FontFamily="Comic Sans MS" FontSize="18" FontWeight="Bold" Foreground="Red" Click="ClearOrder_Click"/>
         </Grid>
 
     </Grid>

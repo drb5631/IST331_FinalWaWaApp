@@ -30,5 +30,13 @@ namespace IST331_FinalWaWaApp {
             mainWindow.Show();
             this.Hide();
         }
+
+        private void grid1_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            MainWindow mainWindow = new MainWindow(bw, bevW, ld);
+            this.Close();
+            mainWindow.Show();
+            this.Hide();
+        }
     }
 }

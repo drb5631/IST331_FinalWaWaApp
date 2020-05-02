@@ -85,7 +85,10 @@ namespace IST331_FinalWaWaApp {
         }
 
         private void CancelOrder_Click(object sender, RoutedEventArgs e) {
-            Application.Current.Shutdown();
+            BeginWindow beginWindow = new BeginWindow();
+            this.Close();
+            beginWindow.Show();
+
         }
 
         private void OrderBox_SelectionChanged(object sender, SelectionChangedEventArgs e) {
@@ -100,10 +103,10 @@ namespace IST331_FinalWaWaApp {
         }
 
         private void DeleteItem_Click(object sender, RoutedEventArgs e) {
-            orderBox.Items.Remove(orderBox.SelectedItem);
             ld.orderBox.Items.Remove(orderBox.SelectedItem);
-            bevW.orderBox.Items.Remove(bevW.orderBox.SelectedItem);
-            bw.orderBox.Items.Remove(bw.orderBox.SelectedItem);
+            bevW.orderBox.Items.Remove(orderBox.SelectedItem);
+            bw.orderBox.Items.Remove(orderBox.SelectedItem);
+            orderBox.Items.Remove(orderBox.SelectedItem);
         }
     }
 }
