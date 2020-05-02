@@ -89,5 +89,12 @@ namespace IST331_FinalWaWaApp {
             bevW.orderBox.Items.Clear();
             bw.orderBox.Items.Clear();
         }
+
+        private void DeleteItem_Click(object sender, RoutedEventArgs e) {
+            orderBox.Items.Remove(orderBox.SelectedItem);
+            ld.orderBox.Items.Remove(orderBox.SelectedItem);
+            bevW.orderBox.Items.Remove(orderBox.SelectedItem);
+            bw.orderBox.Items.Remove(orderBox.SelectedItem);
+        }
     }
 }

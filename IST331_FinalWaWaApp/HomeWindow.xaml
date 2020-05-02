@@ -43,6 +43,12 @@
         <TextBlock Grid.Column="1" HorizontalAlignment="Left" Margin="129,396,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="15" Width="162" FontSize="9"><Run Text="Sierra Chiu, Ricky Patel, "/><Run Text="Dave Blon"/></TextBlock>
         <Button x:Name="cancelOrderButton" Content="Cancel Order" FontFamily="Comic Sans MS" Foreground="#FFD93030" HorizontalAlignment="Left" Margin="15,374,0,0" VerticalAlignment="Top" Width="161" RenderTransformOrigin="0.28,0.458" Background="Red" Click="CancelOrder_Click" FontWeight="Bold"/>
         <Button x:Name="clearOrderButton" Content="Clear Order" Grid.Column="1" FontFamily="Comic Sans MS" Foreground="#FFD93030" HorizontalAlignment="Left" Margin="87.4,326,0,0" VerticalAlignment="Top" Width="161" RenderTransformOrigin="0.28,0.458" Background="Red" Click="ClearOrder_Click" FontWeight="Bold"/>
+        <Button x:Name="deleteButton" HorizontalAlignment="Left" Margin="480,262,0,0" VerticalAlignment="Top" Width="75" Grid.ColumnSpan="2" Click="DeleteItem_Click">
+            <StackPanel>
+                <Image Source="images/deletePicture.jpg" Height="42" Width="67" Stretch="Fill" />
+                <TextBlock HorizontalAlignment="Center" Foreground="#FF73411C" FontFamily="Comic Sans MS"><Run Text="Delete"/></TextBlock>
+            </StackPanel>
+        </Button>
 
 
     </Grid>
