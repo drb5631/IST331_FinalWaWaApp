@@ -17,12 +17,16 @@ namespace IST331_FinalWaWaApp {
     /// Interaction logic for BeginWindow.xaml
     /// </summary>
     public partial class BeginWindow : Window {
+        BreakfastWindow bw;
+        BeveragesWindow bevW;
+        LunchDinnerWindow ld;
         public BeginWindow() {
             InitializeComponent();
         }
 
         private void CompleteOrder_Click(object sender, RoutedEventArgs e) {
-            MainWindow mainWindow = new MainWindow();
+            MainWindow mainWindow = new MainWindow(bw, bevW, ld);
+            this.Close();
             mainWindow.Show();
             this.Hide();
         }

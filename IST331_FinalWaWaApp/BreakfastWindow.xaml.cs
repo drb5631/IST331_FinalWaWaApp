@@ -14,18 +14,23 @@ using System.Windows.Shapes;
 
 namespace IST331_FinalWaWaApp {
     /// <summary>
-    /// Interaction logic for SecondBreafastWindow.xaml
+    /// Interaction logic for BreafastWindow.xaml
     /// </summary>
     public partial class BreakfastWindow : Window {
-        MainWindow parent;
-        public BreakfastWindow(MainWindow mainWindow) {
-            parent = mainWindow;
+        MainWindow mainParent;
+        BeveragesWindow bevParent;
+        LunchDinnerWindow ldParent;
+
+        public BreakfastWindow(MainWindow mainWindow, BeveragesWindow bevW, LunchDinnerWindow ld) {
+            mainParent = mainWindow;
+            bevParent = mainParent.GetBeveragesWindow();
+            ldParent = mainParent.GetLunchDinnerWindow();
             InitializeComponent();
         }
 
         private void SecondBreakfastBackBtn_Click(object sender, RoutedEventArgs e) {
-            parent.Show();
-            this.Close();
+            mainParent.Show();
+            this.Hide();
         }
 
         private void Button_Click(object sender, RoutedEventArgs e) {
@@ -37,18 +42,31 @@ namespace IST331_FinalWaWaApp {
         }
 
         private void EggSandwich_Click(object sender, RoutedEventArgs e) {
-            orderBox.Items.Add("Egg Sandwich            $2.26");
-            parent.orderBox.Items.Add("Egg Sandwich            $2.26");
+            orderBox.Items.Add("Egg Sandwich - $3.26");
+            mainParent.orderBox.Items.Add("Egg Sandwich - $3.26");
+            mainParent.GetBeveragesWindow().orderBox.Items.Add("Egg Sandwich - $3.26");
+            mainParent.GetLunchDinnerWindow().orderBox.Items.Add("Egg Sandwich - $3.26");
         }
 
         private void Bagel_Click(object sender, RoutedEventArgs e) {
-            orderBox.Items.Add("Bagel                    $2.26");
-            parent.orderBox.Items.Add("Bagel                    $2.26");
+            orderBox.Items.Add("Bagel - $2.26");
+            mainParent.orderBox.Items.Add("Bagel - $2.26");
+            mainParent.GetBeveragesWindow().orderBox.Items.Add("Bagel - $2.26");
+            mainParent.GetLunchDinnerWindow().orderBox.Items.Add("Bagel - $2.26");
         }
 
         private void Burrito2_Click(object sender, RoutedEventArgs e) {
-            orderBox.Items.Add("Breakfast Buritto        $2.26");
-            parent.orderBox.Items.Add("Breakfast Buritto        $2.26");
+            orderBox.Items.Add("Breakfast Buritto - $4.26");
+            mainParent.orderBox.Items.Add("Breakfast Buritto - $4.26");
+            mainParent.GetBeveragesWindow().orderBox.Items.Add("Breakfast Buritto - $4.26");
+            mainParent.GetLunchDinnerWindow().orderBox.Items.Add("Breakfast Buritto - $4.26");
+        }
+
+        private void ClearOrder_Click(object sender, RoutedEventArgs e) {
+            orderBox.Items.Clear();
+            mainParent.orderBox.Items.Clear();
+            mainParent.GetBeveragesWindow().orderBox.Items.Clear();
+            mainParent.GetLunchDinnerWindow().orderBox.Items.Clear();
         }
     }
 }

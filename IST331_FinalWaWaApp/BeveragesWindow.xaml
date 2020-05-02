@@ -4,7 +4,8 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         mc:Ignorable="d"
-        Title="Beverages" Height="450" Width="800" ResizeMode="NoResize">
+        Title="Beverages" Height="450" Width="800" ResizeMode="NoResize"
+        WindowStartupLocation="CenterScreen">
 
     <Grid>
         <Grid.ColumnDefinitions>
@@ -38,11 +39,6 @@
             </StackPanel>
         </Button>
         <ListBox  x:Name="orderBox" TextBlock.FontSize="14" HorizontalAlignment="Left" Height="276" Margin="70.4,52,0,0" VerticalAlignment="Top" Width="203" Grid.Column="1">
-            <ListBox.ItemsPanel>
-                <ItemsPanelTemplate>
-                    <VirtualizingStackPanel VerticalAlignment="Bottom"/>
-                </ItemsPanelTemplate>
-            </ListBox.ItemsPanel>
         </ListBox>
 
         <Button Margin="281,203,284.6,53" Click="Lattes_Click" Grid.ColumnSpan="2">

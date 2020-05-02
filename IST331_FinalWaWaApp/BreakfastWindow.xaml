@@ -5,7 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:IST331_FinalWaWaApp"
         mc:Ignorable="d"
-        Title="SecondBreafastWindow" Height="450" Width="800">
+        Title="Breakfast" Height="450" Width="800" ResizeMode="NoResize"
+        WindowStartupLocation="CenterScreen"
+>
     <Grid>
         <Grid>
             <Grid.RowDefinitions>
@@ -44,6 +46,7 @@
                     <TextBlock HorizontalAlignment="Center" FontFamily="Comic Sans MS" FontSize="20" FontWeight="Bold" Foreground="#FF73411C"><Run Text="BACK"/></TextBlock>
                 </StackPanel>
             </Button>
+            <Button x:Name="clearOrderButton" Content="Clear Order" Grid.Column="2" HorizontalAlignment="Left" Margin="456.8,194.6,0,0" Grid.Row="1" VerticalAlignment="Top" Width="111" FontFamily="Comic Sans MS" FontSize="18" FontWeight="Bold" Foreground="Red" Click="ClearOrder_Click"/>
         </Grid>
 
     </Grid>

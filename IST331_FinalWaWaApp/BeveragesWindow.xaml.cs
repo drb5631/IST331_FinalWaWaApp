@@ -15,44 +15,58 @@ using System.Windows.Shapes;
 
 namespace IST331_FinalWaWaApp {
     /// <summary>
-    /// Interaction logic for Page1.xaml
+    /// Interaction logic for Beverages.xaml
     /// </summary>
     public partial class BeveragesWindow : Window {
-        MainWindow parent;
+        MainWindow mainParent;
+        BreakfastWindow bwParent;
+        LunchDinnerWindow ldParent;
 
-        public BeveragesWindow(MainWindow mainWindow) {
-            parent = mainWindow;
+        public BeveragesWindow(MainWindow mainWindow, BreakfastWindow breakfastWindow, LunchDinnerWindow lunchDinnerWindow) {
+            mainParent = mainWindow;
+            bwParent = mainParent.GetBreakfastWindow();
+            ldParent = mainParent.GetLunchDinnerWindow();
             InitializeComponent();
         }
         private void BackButton_Click(object sender, RoutedEventArgs e) {
-            parent.Show();
+            mainParent.Show();
             this.Hide();
         }
         private void ClearOrderBtn_Click(object sender, RoutedEventArgs e) {
             orderBox.Items.Clear();
+            mainParent.orderBox.Items.Clear();
+            mainParent.GetLunchDinnerWindow().orderBox.Items.Clear();
+            mainParent.GetBreakfastWindow().orderBox.Items.Clear();
         }
 
         private void ColdbrewButton(object sender, RoutedEventArgs e) {
 
-            orderBox.Items.Add("Cold Brew/Iced Coffee    $2.26");
-            parent.orderBox.Items.Add("Cold Brew/Iced Coffee    $2.26");
+            orderBox.Items.Add("Cold Brew/Iced Coffee - $2.26");
+            mainParent.orderBox.Items.Add("Cold Brew/Iced Coffee - $2.26");
+            mainParent.GetBreakfastWindow().orderBox.Items.Add("Cold Brew/Iced Coffee - $2.26");
+            mainParent.GetLunchDinnerWindow().orderBox.Items.Add("Cold Brew/Iced Coffee - $2.26");
         }
 
         private void Fruitsmoothie_Click(object sender, RoutedEventArgs e) {
 
-            orderBox.Items.Add("Fruit Smoothies          $4.53");
-            parent.orderBox.Items.Add("Fruit Smoothies          $4.53");
-
+            orderBox.Items.Add("Fruit Smoothies - $2.53");
+            mainParent.orderBox.Items.Add("Fruit Smoothies - $2.53");
+            mainParent.GetBreakfastWindow().orderBox.Items.Add("Fruit Smoothies - $2.53");
+            mainParent.GetLunchDinnerWindow().orderBox.Items.Add("Fruit Smoothies - $2.53");
         }
         private void Chaitea_Click(object sender, RoutedEventArgs e) {
 
-            orderBox.Items.Add("Chai Tea                  $3.79");
-            parent.orderBox.Items.Add("Chai Tea                  $3.79");
+            orderBox.Items.Add("Chai Tea - $2.79");
+            mainParent.orderBox.Items.Add("Chai Tea - $2.79");
+            mainParent.GetBreakfastWindow().orderBox.Items.Add("Chai Tea - $2.79");
+            mainParent.GetLunchDinnerWindow().orderBox.Items.Add("Chai Tea - $2.79");
         }
 
         private void Lattes_Click(object sender, RoutedEventArgs e) {
-            orderBox.Items.Add("Lattes                   $3.69");
-            parent.orderBox.Items.Add("Lattes                   $3.69");
+            orderBox.Items.Add("Lattes - $2.69");
+            mainParent.orderBox.Items.Add("Lattes - $2.69");
+            mainParent.GetBreakfastWindow().orderBox.Items.Add("Lattes - $2.69");
+            mainParent.GetLunchDinnerWindow().orderBox.Items.Add("Lattes - $2.69");
         }
     }
 }
