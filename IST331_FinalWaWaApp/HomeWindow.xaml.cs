@@ -70,7 +70,7 @@ namespace IST331_FinalWaWaApp {
                 beginWindow.Show();
             }
             else {
-                MessageBox.Show("You have not selected andy items. Please choose your desired items and then complete your order\n" +
+                MessageBox.Show("You have not selected any items. Please choose your desired items and then complete your order\n" +
                     "If you have decided to cancel your, please select 'Cancel Order'\nThank you!");
             }
         }
