@@ -53,22 +53,26 @@ namespace IST331_FinalWaWaApp {
         }
 
         private void CompleteOrder_Click(object sender, RoutedEventArgs e) {
-            Random random = new Random();
-            double total = 0.0;
             string[] orderItems = orderBox.Items.OfType<string>().ToArray();
-            List<double> itemPrices = new List<double>();
-            foreach (string item in orderItems) {
-                double itemPrice = Double.Parse(item.Substring(item.IndexOf("$") + 1));
-                //double itemPrice = Double.Parse(item.Substring(start, end));
-               itemPrices.Add(itemPrice);
-               total = total + itemPrice;
-            }
+            if (orderItems.Length != 0) {
+                Random random = new Random();
+                double total = 0.0;
+                List<double> itemPrices = new List<double>();
+                foreach (string item in orderItems) {
+                    double itemPrice = Double.Parse(item.Substring(item.IndexOf("$") + 1));
+                    total = total + itemPrice;
+                }
 
-            int orderNumber = random.Next(1, 101);
-            MessageBox.Show("Your order is being made. Please pay at the register before picking up. \nThank you for choosing Wawa!\nOrder Number: " + orderNumber + "\nOrder Total: $" + total);
-            BeginWindow beginWindow = new BeginWindow();
-            this.Close();
-            beginWindow.Show();
+                int orderNumber = random.Next(1, 101);
+                MessageBox.Show("Your order is being made. Please pay at the register before picking up. \nThank you for choosing Wawa!\nOrder Number: " + orderNumber + "\nOrder Total: $" + total);
+                BeginWindow beginWindow = new BeginWindow();
+                this.Close();
+                beginWindow.Show();
+            }
+            else {
+                MessageBox.Show("You have not selected andy items. Please choose your desired items and then complete your order\n" +
+                    "If you have decided to cancel your, please select 'Cancel Order'\nThank you!");
+            }
         }
 
         private void CancelOrder_Click(object sender, RoutedEventArgs e) {
