@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:IST331_FinalWaWaApp"
         mc:Ignorable="d"
-        Title="Breakfast" Height="450" Width="800">
+        Title="Breakfast" Height="450" Width="800" ResizeMode="NoResize">
     <Grid>
         <Grid>
             <Grid.RowDefinitions>

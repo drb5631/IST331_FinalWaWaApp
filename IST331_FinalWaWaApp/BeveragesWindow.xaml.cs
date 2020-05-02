@@ -15,7 +15,7 @@ using System.Windows.Shapes;
 
 namespace IST331_FinalWaWaApp {
     /// <summary>
-    /// Interaction logic for Page1.xaml
+    /// Interaction logic for Beverages.xaml
     /// </summary>
     public partial class BeveragesWindow : Window {
         MainWindow mainParent;

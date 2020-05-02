@@ -14,7 +14,7 @@ using System.Windows.Shapes;
 
 namespace IST331_FinalWaWaApp {
     /// <summary>
-    /// Interaction logic for SecondBreafastWindow.xaml
+    /// Interaction logic for BreafastWindow.xaml
     /// </summary>
     public partial class BreakfastWindow : Window {
         MainWindow mainParent;

@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:IST331_FinalWaWaApp"
         mc:Ignorable="d"
-        Title="Welcome To Wawa!" Height="450" Width="800">
+        Title="Welcome To Wawa!" Height="450" Width="800" ResizeMode="NoResize">
     <Grid>
         <TextBlock Margin="73,36,73.6,0" TextWrapping="Wrap" Text="Welcome to Wawa" VerticalAlignment="Top" Height="94" FontFamily="Officina Sans" FontSize="72" Foreground="Red" FontWeight="Bold"/>
         <Button x:Name="beginButton" Content="Touch Here To Begin!" FontFamily="Comic Sans MS" Foreground="#FFD93030" HorizontalAlignment="Left" Margin="149,227,0,0" VerticalAlignment="Top" Width="518" RenderTransformOrigin="0.28,0.458" Background="{x:Null}" Click="CompleteOrder_Click" FontWeight="Bold" FontSize="48" BorderThickness="0"/>
