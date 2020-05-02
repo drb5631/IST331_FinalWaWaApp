@@ -19,32 +19,36 @@ namespace IST331_FinalWaWaApp {
     /// </summary>
     public partial class MainWindow : Window {
 
-        public MainWindow() {
-            InitializeComponent();
-        }
-
-        BeveragesWindow bevW;
         BreakfastWindow bw;
+        BeveragesWindow bevW;
         LunchDinnerWindow ld;
+
+        public MainWindow(BreakfastWindow breakfastWindow, BeveragesWindow beveragesWindow, LunchDinnerWindow lunchDinnerWindow) {
+            InitializeComponent();
+            this.bw = breakfastWindow;
+            bw = new BreakfastWindow(this, bevW, ld);
+            this.bevW = beveragesWindow;
+            bevW = new BeveragesWindow(this, bw, ld);
+            this.ld = lunchDinnerWindow;
+            ld = new LunchDinnerWindow(this, bevW, bw);
+
+        }
 
         private void Button_Click(object sender, RoutedEventArgs e) {
 
         }
 
         private void BtnBreakfast_Click(object sender, RoutedEventArgs e) {
-            bw = new BreakfastWindow(this);
             bw.Show();
             this.Hide();
         }
 
         private void BeverageButton(object sender, RoutedEventArgs e) {
-            bevW = new BeveragesWindow(this);
             bevW.Show();
             this.Hide();
         }
 
         private void LunchDinerButton_Click(object sender, RoutedEventArgs e) {
-            ld = new LunchDinnerWindow(this);
             ld.Show();
             this.Hide();
         }
@@ -74,6 +78,13 @@ namespace IST331_FinalWaWaApp {
 
         private void OrderBox_SelectionChanged(object sender, SelectionChangedEventArgs e) {
 
+        }
+
+        private void ClearOrder_Click(object sender, RoutedEventArgs e) {
+            orderBox.Items.Clear();
+            ld.orderBox.Items.Clear();
+            bevW.orderBox.Items.Clear();
+            bw.orderBox.Items.Clear();
         }
     }
 }

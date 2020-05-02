@@ -38,11 +38,6 @@
             </StackPanel>
         </Button>
         <ListBox  x:Name="orderBox" TextBlock.FontSize="14" HorizontalAlignment="Left" Height="276" Margin="70.4,52,0,0" VerticalAlignment="Top" Width="203" Grid.Column="1">
-            <ListBox.ItemsPanel>
-                <ItemsPanelTemplate>
-                    <VirtualizingStackPanel VerticalAlignment="Bottom"/>
-                </ItemsPanelTemplate>
-            </ListBox.ItemsPanel>
         </ListBox>
 
         <Button Margin="281,203,284.6,53" Click="Lattes_Click" Grid.ColumnSpan="2">

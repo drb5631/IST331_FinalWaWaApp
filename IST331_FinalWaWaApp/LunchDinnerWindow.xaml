@@ -44,6 +44,7 @@
                     <TextBlock HorizontalAlignment="Center" FontFamily="Comic Sans MS" FontSize="20" FontWeight="Bold" Foreground="#FF73411C"><Run Text="BACK"/></TextBlock>
                 </StackPanel>
             </Button>
+            <Button x:Name="clearOrderButton" Content="Clear Order" Grid.Column="2" HorizontalAlignment="Left" Margin="469.4,223,0,0" Grid.Row="1" VerticalAlignment="Top" Width="105" FontFamily="Comic Sans MS" FontSize="18" Foreground="Red" FontWeight="Bold" Click="ClearOrderButton_Click"/>
         </Grid>
 
     </Grid>

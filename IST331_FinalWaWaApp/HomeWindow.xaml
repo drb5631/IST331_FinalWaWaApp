@@ -41,7 +41,7 @@
         <Button x:Name="CompleteOrder" Content="Complete Order" Grid.Column="1" FontFamily="Comic Sans MS" Foreground="#FFD93030" HorizontalAlignment="Left" Margin="87.4,359,0,0" VerticalAlignment="Top" Width="161" RenderTransformOrigin="0.28,0.458" Background="Red" Click="CompleteOrder_Click" FontWeight="Bold"/>
         <TextBlock Grid.Column="1" HorizontalAlignment="Left" Margin="129,396,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="15" Width="162" FontSize="9"><Run Text="Sierra Chiu, Ricky Patel, "/><Run Text="Dave Blon"/></TextBlock>
         <Button x:Name="cancelOrderButton" Content="Cancel Order" FontFamily="Comic Sans MS" Foreground="#FFD93030" HorizontalAlignment="Left" Margin="15,374,0,0" VerticalAlignment="Top" Width="161" RenderTransformOrigin="0.28,0.458" Background="Red" Click="CancelOrder_Click" FontWeight="Bold"/>
-        <Label x:Name="totalLabel" Content="Total: $" Grid.Column="1" HorizontalAlignment="Left" Margin="87.4,324,0,0" VerticalAlignment="Top" FontFamily="Comic Sans MS" Background="{x:Null}" Foreground="Red" FontWeight="Bold" FontSize="18"/>
+        <Button x:Name="clearOrderButton" Content="Clear Order" Grid.Column="1" FontFamily="Comic Sans MS" Foreground="#FFD93030" HorizontalAlignment="Left" Margin="87.4,326,0,0" VerticalAlignment="Top" Width="161" RenderTransformOrigin="0.28,0.458" Background="Red" Click="ClearOrder_Click" FontWeight="Bold"/>
 
 
     </Grid>

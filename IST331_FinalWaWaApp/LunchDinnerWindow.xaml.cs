@@ -17,10 +17,14 @@ namespace IST331_FinalWaWaApp {
     /// Interaction logic for SecondLunchandDinner.xaml
     /// </summary>
     public partial class LunchDinnerWindow : Window {
-        MainWindow parent;
+        MainWindow mainParent;
+        BeveragesWindow bevParent;
+        BreakfastWindow bParent;
 
-        public LunchDinnerWindow(MainWindow mainWindow) {
-            parent = mainWindow;
+        public LunchDinnerWindow(MainWindow mainWindow, BeveragesWindow beveragesWindow, BreakfastWindow breakfastWindow) {
+            mainParent = mainWindow;
+            bevParent = beveragesWindow;
+            bParent = breakfastWindow;
             InitializeComponent();
         }
 
@@ -30,22 +34,35 @@ namespace IST331_FinalWaWaApp {
 
         private void hotSandwichesBackBtn_Click(object sender, RoutedEventArgs e) {
             this.Hide();
-            parent.Show();
+            mainParent.Show();
         }
 
         private void Chickensandwiches_Click(object sender, RoutedEventArgs e) {
             orderBox.Items.Add("Chicken Sandwich - $4.26");
-            parent.orderBox.Items.Add("Chicken Sandwich - $4.26");
+            mainParent.orderBox.Items.Add("Chicken Sandwich - $4.26");
+            bevParent.orderBox.Items.Add("Chicken Sandwich - $4.26");
+            bParent.orderBox.Items.Add("Chicken Sandwich - $4.26");
         }
 
         private void Meatballsub_Click(object sender, RoutedEventArgs e) {
             orderBox.Items.Add("Meatball Sandwich - $4.26");
-            parent.orderBox.Items.Add("Meatball Sandwich - $4.26");
+            mainParent.orderBox.Items.Add("Meatball Sandwich - $4.26");
+            bevParent.orderBox.Items.Add("Meatball Sandwich - $4.26");
+            bParent.orderBox.Items.Add("Meatball Sandwich - $4.26");
         }
 
         private void Flatbreads_Click(object sender, RoutedEventArgs e) {
             orderBox.Items.Add("Flatbread - $3.26");
-            parent.orderBox.Items.Add("Flatbread - $3.26");
+            mainParent.orderBox.Items.Add("Flatbread - $3.26");
+            bevParent.orderBox.Items.Add("Flatbread - $3.26");
+            bParent.orderBox.Items.Add("Flatbread - $3.26");
+        }
+
+        private void ClearOrderButton_Click(object sender, RoutedEventArgs e) {
+            orderBox.Items.Clear();
+            mainParent.orderBox.Items.Clear();
+            bevParent.orderBox.Items.Clear();
+            bParent.orderBox.Items.Clear();
         }
     }
 }
