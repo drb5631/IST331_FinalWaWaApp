@@ -32,6 +32,15 @@ namespace IST331_FinalWaWaApp {
             this.ld = lunchDinnerWindow;
             ld = new LunchDinnerWindow(this, bevW, bw);
         }
+        public BreakfastWindow GetBreakfastWindow() {
+            return bw;
+        }
+        public BeveragesWindow GetBeveragesWindow() {
+            return bevW;
+        }
+        public LunchDinnerWindow GetLunchDinnerWindow() {
+            return ld;
+        }
 
         private void Button_Click(object sender, RoutedEventArgs e) {
 
@@ -93,8 +102,8 @@ namespace IST331_FinalWaWaApp {
         private void DeleteItem_Click(object sender, RoutedEventArgs e) {
             orderBox.Items.Remove(orderBox.SelectedItem);
             ld.orderBox.Items.Remove(orderBox.SelectedItem);
-            bevW.orderBox.Items.Remove(orderBox.SelectedItem);
-            bw.orderBox.Items.Remove(orderBox.SelectedItem);
+            bevW.orderBox.Items.Remove(bevW.orderBox.SelectedItem);
+            bw.orderBox.Items.Remove(bw.orderBox.SelectedItem);
         }
     }
 }

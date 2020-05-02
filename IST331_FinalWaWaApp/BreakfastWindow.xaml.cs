@@ -23,8 +23,8 @@ namespace IST331_FinalWaWaApp {
 
         public BreakfastWindow(MainWindow mainWindow, BeveragesWindow bevW, LunchDinnerWindow ld) {
             mainParent = mainWindow;
-            bevParent = bevW;
-            ldParent = ld;
+            bevParent = mainParent.GetBeveragesWindow();
+            ldParent = mainParent.GetLunchDinnerWindow();
             InitializeComponent();
         }
 
@@ -44,29 +44,29 @@ namespace IST331_FinalWaWaApp {
         private void EggSandwich_Click(object sender, RoutedEventArgs e) {
             orderBox.Items.Add("Egg Sandwich - $3.26");
             mainParent.orderBox.Items.Add("Egg Sandwich - $3.26");
-            bevParent.orderBox.Items.Add("Egg Sandwich - $3.26");
-            ldParent.orderBox.Items.Add("Egg Sandwich - $3.26");
+            mainParent.GetBeveragesWindow().orderBox.Items.Add("Egg Sandwich - $3.26");
+            mainParent.GetLunchDinnerWindow().orderBox.Items.Add("Egg Sandwich - $3.26");
         }
 
         private void Bagel_Click(object sender, RoutedEventArgs e) {
             orderBox.Items.Add("Bagel - $2.26");
             mainParent.orderBox.Items.Add("Bagel - $2.26");
-            bevParent.orderBox.Items.Add("Bagel - $2.26");
-            ldParent.orderBox.Items.Add("Bagel - $2.26");
+            mainParent.GetBeveragesWindow().orderBox.Items.Add("Bagel - $2.26");
+            mainParent.GetLunchDinnerWindow().orderBox.Items.Add("Bagel - $2.26");
         }
 
         private void Burrito2_Click(object sender, RoutedEventArgs e) {
             orderBox.Items.Add("Breakfast Buritto - $4.26");
             mainParent.orderBox.Items.Add("Breakfast Buritto - $4.26");
-            bevParent.orderBox.Items.Add("Breakfast Buritto - $4.26");
-            ldParent.orderBox.Items.Add("Breakfast Buritto - $4.26");
+            mainParent.GetBeveragesWindow().orderBox.Items.Add("Breakfast Buritto - $4.26");
+            mainParent.GetLunchDinnerWindow().orderBox.Items.Add("Breakfast Buritto - $4.26");
         }
 
         private void ClearOrder_Click(object sender, RoutedEventArgs e) {
             orderBox.Items.Clear();
             mainParent.orderBox.Items.Clear();
-            bevParent.orderBox.Items.Clear();
-            ldParent.orderBox.Items.Clear();
+            mainParent.GetBeveragesWindow().orderBox.Items.Clear();
+            mainParent.GetLunchDinnerWindow().orderBox.Items.Clear();
         }
     }
 }

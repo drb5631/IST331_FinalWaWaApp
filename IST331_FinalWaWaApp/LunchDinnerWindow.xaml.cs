@@ -23,8 +23,8 @@ namespace IST331_FinalWaWaApp {
 
         public LunchDinnerWindow(MainWindow mainWindow, BeveragesWindow beveragesWindow, BreakfastWindow breakfastWindow) {
             mainParent = mainWindow;
-            bevParent = beveragesWindow;
-            bParent = breakfastWindow;
+            bevParent = mainParent.GetBeveragesWindow();
+            bParent = mainParent.GetBreakfastWindow();
             InitializeComponent();
         }
 
