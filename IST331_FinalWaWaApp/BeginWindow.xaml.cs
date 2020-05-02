@@ -24,6 +24,7 @@ namespace IST331_FinalWaWaApp {
         private void CompleteOrder_Click(object sender, RoutedEventArgs e) {
             MainWindow mainWindow = new MainWindow();
             mainWindow.Show();
+            this.Hide();
         }
     }
 }

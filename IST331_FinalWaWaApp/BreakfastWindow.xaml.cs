@@ -18,7 +18,6 @@ namespace IST331_FinalWaWaApp {
     /// </summary>
     public partial class BreakfastWindow : Window {
         MainWindow parent;
-
         public BreakfastWindow(MainWindow mainWindow) {
             parent = mainWindow;
             InitializeComponent();
