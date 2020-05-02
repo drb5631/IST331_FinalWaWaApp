@@ -31,7 +31,6 @@ namespace IST331_FinalWaWaApp {
             bevW = new BeveragesWindow(this, bw, ld);
             this.ld = lunchDinnerWindow;
             ld = new LunchDinnerWindow(this, bevW, bw);
-
         }
 
         private void Button_Click(object sender, RoutedEventArgs e) {
@@ -68,7 +67,7 @@ namespace IST331_FinalWaWaApp {
             int orderNumber = random.Next(1, 101);
             MessageBox.Show("Your order is being made. Please pay at the register before picking up. \nThank you for choosing Wawa!\nOrder Number: " + orderNumber + "\nOrder Total: $" + total);
             BeginWindow beginWindow = new BeginWindow();
-            this.Hide();
+            this.Close();
             beginWindow.Show();
         }
 
