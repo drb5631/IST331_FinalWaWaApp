@@ -72,15 +72,15 @@ namespace IST331_FinalWaWaApp {
                     total = total + itemPrice;
                 }
 
-                int orderNumber = random.Next(1, 101);
-                MessageBox.Show("Your order is being made. Please pay at the register before picking up. \nThank you for choosing Wawa!\nOrder Number: " + orderNumber + "\nOrder Total: $" + total);
+                int orderNumber = random.Next(100, 1001);
+                MessageBox.Show("YOUR ORDER IS BEING MADE! PLEASE PAY BEFORE PICKING UP!\n\nTHANK YOU FOR CHOOSING WAWA!\n\nORDER NUMBER: " + orderNumber + "\nORDER TOTAL: $" + total);
                 BeginWindow beginWindow = new BeginWindow();
                 this.Close();
                 beginWindow.Show();
             }
             else {
-                MessageBox.Show("You have not selected any items. Please choose your desired items and then complete your order\n" +
-                    "If you have decided to cancel your, please select 'Cancel Order'\nThank you!");
+                MessageBox.Show("YOU HAVE NOT SELECTED ANY ITEMS.\n\nPLEASE CHOOSE YOUR DESIRED ITEMS AND THEN COMPLETE YOUR ORDER\n\n" +
+                    "IF YOU YOU HAVE DECIDED TO CANCEL YOUR ORDER, SELECT 'Cancel Order'\n\nTHANK YOU!");
             }
         }
 
