@@ -41,18 +41,18 @@ namespace IST331_FinalWaWaApp {
 
         }
 
-        private void EggSandwich_Click(object sender, RoutedEventArgs e) {
-            orderBox.Items.Add("Egg Sandwich - $3.26");
-            mainParent.orderBox.Items.Add("Egg Sandwich - $3.26");
-            mainParent.GetBeveragesWindow().orderBox.Items.Add("Egg Sandwich - $3.26");
-            mainParent.GetLunchDinnerWindow().orderBox.Items.Add("Egg Sandwich - $3.26");
+        private void Oatmeal_Click(object sender, RoutedEventArgs e) {
+            orderBox.Items.Add("Oatmeal - $3.26");
+            mainParent.orderBox.Items.Add("Oatmeal - $3.26");
+            mainParent.GetBeveragesWindow().orderBox.Items.Add("Oatmeal - $3.26");
+            mainParent.GetLunchDinnerWindow().orderBox.Items.Add("Oatmeal - $3.26");
         }
 
-        private void Bagel_Click(object sender, RoutedEventArgs e) {
-            orderBox.Items.Add("Bagel - $2.26");
-            mainParent.orderBox.Items.Add("Bagel - $2.26");
-            mainParent.GetBeveragesWindow().orderBox.Items.Add("Bagel - $2.26");
-            mainParent.GetLunchDinnerWindow().orderBox.Items.Add("Bagel - $2.26");
+        private void BSandwich_Click(object sender, RoutedEventArgs e) {
+            orderBox.Items.Add("Breakfast Sandwich - $2.26");
+            mainParent.orderBox.Items.Add("Breakfast Sandwich - $2.26");
+            mainParent.GetBeveragesWindow().orderBox.Items.Add("Breakfast Sandwich - $2.26");
+            mainParent.GetLunchDinnerWindow().orderBox.Items.Add("Breakfast Sandwich - $2.26");
         }
 
         private void Burrito2_Click(object sender, RoutedEventArgs e) {
